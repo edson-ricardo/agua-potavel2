@@ -1,0 +1,195 @@
+/*Importado do Google Font*/
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*/
+/*Inserir o código a seguinr no "body.css", caso vá usar o @import acima: font-family: "Poppins", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Resolvi testar o @import abaixo para conhecimento*/
+@import url(body.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans Code", monospace;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    /*width: 100%;*/
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+form .img-logo {    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-logo img {
+    display: flex;
+    width: 300px;
+    height: 210px;
+    padding-top: 20px;
+}
+
+/*.container h2 {
+    color: #0277bd;
+    font-size: 1.8em;
+    text-align: center;
+    padding-bottom: 20px;
+}*/
+
+.input-icone {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.input-icone input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 40px;
+    /*border: 2px solid rgba(218, 213, 213, 0.2);*/
+    border: 1px solid #90caf9;
+    outline: none;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    
+    /*border: 1px solid #90caf9;*/
+}
+
+.input-icone input::placeholder {
+    color: #c5c5c5;
+}
+
+.input-icone img {
+    position: absolute;
+    right: 20px; /*Insere o ícone dentro do input*/
+    font-size: 20px;
+    top: 50%; /*O ícone começa a aparecer após 50% da input*/
+    transform: translateY(-50%); /*Permite jogar o item para o centro após descontar o top:50%*/
+}
+
+.lembrar-esquecer-senha {
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 0 15px;
+    color: #333;
+}
+
+.lembrar-esquecer-senha label input {
+    accent-color: #01579b;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.lembrar-esquecer-senha a {
+    text-decoration: none;
+    margin-top: 13px;
+    color: #333;
+}
+
+.lembrar-esquecer-senha a:hover {
+    text-decoration: underline;
+    font-family: "Google Sans Code", monospace;
+}
+
+/*Azul: #01579b;*/
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 40px;
+    /*border: none;*/    
+    border: 1px solid #90caf9;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    background-color: #0288d1;
+}
+
+.login {
+    background-color: #0288d1;
+    color: white;
+    margin-top: 20px;
+}
+
+.login:hover {
+    background-color: #0277bd;
+    transition: 0.3s ease-in;    
+}
+
+input:focus /*, select:focus, textarea:focus*/ {
+    border-color: #0288d1;
+    outline: none;
+    box-shadow: 0 0 4px #0288d1;    
+}
+
+.registrar {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0 15px;    
+}
+
+.registrar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+.registrar a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* TODO - FAZER O POPUP*/
+
+.pop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.pop-conteudo {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Botão x para fechar */
+.fechar-popup {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+.fechar-popup:hover {
+    color: #007bff;
+}
+
+
+
