@@ -128,7 +128,6 @@ descricao.addEventListener('input', function() {
     contador.style.backgroundColor = "#e3f2fd";
     contador.style.borderColor = "#90caf9";
   }
-
 });
 
 
@@ -144,8 +143,8 @@ document.getElementById('botaoCadastrar').addEventListener('click', function(eve
   const preco = document.getElementById('preco').value.trim();
   const quantidade = document.getElementById('quantidade').value.trim();
   const fornecedor = document.getElementById('fornecedor').value.trim();
-  const descricao = document.getElementById('descricao').value.trim();
   const categoria = document.getElementById('categoria').value.trim();
+  const descricao = document.getElementById('descricao').value.trim();  
   
   if (nome === "" || preco === "" || quantidade === "" || fornecedor === "" || descricao === "" || categoria === "") {
     alert("⚠️ Preencha todos os campos antes de enviar!");
