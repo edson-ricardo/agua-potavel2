@@ -69,6 +69,22 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 4px #0288d1;
 }
 
+.contador {
+    font-size: 0.9rem;
+    color: #01579b;
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    background-color: #e3f2fd;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #90caf9;
+    width: fit-content;
+    align-self: flex-end;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
 /*Remove as setas do number nos navegadores
 baseados em Chromium (Chrome, Edge, Opera, Safari)*/
 input[type=number]::-webkit-inner-spin-button,

@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <!--<link rel="stylesheet" href="style.css">-->
+    <title>Login</title>    
     <link rel="icon" href="./img/home-24.png">
     <link rel="stylesheet" href="./css/style-login.css">
 </head>
 <body>
     <main class="container">        
 
-        <form action="#" method="post">
+        <form action="" method="post">
             <div class="img-logo">
                 <img src="./img/logo3.png" alt="">
-            </div>
-            <!--<h2>Login</h2>-->
+            </div>            
 
             <div class="input-icone">
-                <input type="email" placeholder="Usuário">
+                <input type="email" id="usuario" placeholder="Usuário">
                 <img src="./img/user-24-azul.png" alt="">
             </div>
 
             <div class="input-icone">
-                <input type="password" placeholder="Senha">
+                <input type="password" id="senha" placeholder="Senha">
                 <img src="./img/lock-24-azul.png" alt="">
             </div>
 
@@ -42,39 +40,9 @@
 
             </div>
         </form>
-
-        <script>
-            //Usuário e senha pré-definidos
-            const usuarioCerto = "edson@gmail.com";
-            const senhaCerta = "123";
-
-            //Pegar o evento do formulário no envio
-            document.querySelector("form").addEventListener("submit", function (event){
-                event.preventDefault(); //Impedir o envio normal do formulário
-
-                //Pegar os valores digitados
-                const email = document.querySelector('input[type="email"]').value.trim();
-                const senha = document.querySelector('input[type="password"]').value.trim();
-
-                //O código irá verificar se está tudo preenchido
-                if (email === "" || senha === "") {
-                    alert("Por favor, preencha todos os campos!");
-                    return;
-                }                
-                
-                //Condição para verificar se os dados estão todos preenchidos
-                if (email === usuarioCerto && senha === senhaCerta){
-                    //O login foi bem-sucedido
-                    localStorage.setItem("usuarioLogado", email); //Salva temporariamente o login
-                    //Vai direcionar para a página "cadastr.html"
-                    window.location.href = "cadastro.html";
-                } else {
-                    //Quando dá erro no login
-                    alert("Usuário ou senha incorreto. Tente novamente!");
-                }
-
-            });
-        </script>
     </main>
+
+    <script src="./script/script-Index.js"></script>
+
 </body>
 </html>
